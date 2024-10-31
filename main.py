@@ -3,12 +3,13 @@
 `check_fever` should return `True` if the temperature is `100.4` or higher. For
 any lower temperature, it should return `False`.
 """
-def check_fever(temperature):
-  #YOUR CODE HERE
-  return
-
-# Get temperature from user and convert to float
-temp = ...
+def check_fever(temp):
+  if temp>=(100.4):
+   return True
+  else: 
+   return False
+  
+temp = float(input("What is your temperature?\n"))
 if check_fever(temp):
   print("You have a fever.")
 else:
